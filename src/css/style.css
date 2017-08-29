@@ -77,6 +77,17 @@ main{
     font-size: 36px;
     margin-bottom: 30px;
 }
+.item-title a{
+    text-decoration: none;
+}
+.item-title a:hover{
+    color: #ff5912;
+}
+.item-price span{
+    font-family:'Harmonia_bold';
+    font-size: 18px;
+    color: #ff5912;
+}
 .title.big{
     font-size: 52px;
 }
@@ -101,7 +112,11 @@ main{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    padding: 30px 0;
 }
+
 header a:hover,
 header i:hover{
     color: #ff5912;
