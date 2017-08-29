@@ -7,7 +7,7 @@ body{
     margin: 0;
     color: #34404b;
     font: 12px/1 "Harmonia_regular", sans-serif;
-
+    background-color: #f4f6f8;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -150,6 +150,7 @@ input{
 .more-info-area p{
     padding-top: 17px;
     letter-spacing: .6em;
+    color: rgba(52, 64, 75, .4);
 }
 /*DEFAULT CLASSES END*/
 
@@ -158,9 +159,7 @@ input{
     display: inline-block;
 
 }
-main{
-    background-color: #f4f6f8;
-}
+
 .title{
     font-family:  'Harmonia_black';
     text-transform: uppercase;
@@ -292,3 +291,49 @@ header .bottom-header .header-nav a{
     margin-left: 15px;
 }
 /*ALL STYLES END*/
+/*FOOTER START*/
+footer{
+    margin-top: 60px;
+}
+.footer{
+    padding: 80px 0;
+
+}
+.footer .logo p{
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 2.14;
+}
+.footer .list .footer-list{
+    font-size: 14px;
+    line-height: 2.14em;
+    color: #28313b;
+
+}
+.footer .list .footer-list li:before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-right: 10px;
+    background: #28313b;
+}
+.footer .list .footer-list li:hover:before{
+    background-color: #ff5912;
+}
+.footer .list .footer-list li a:hover{
+    text-decoration: none;
+    color: #ff5912;
+}
+.footer-user-nav span{
+    display: block;
+    font-family: 'Harmonia_bold';
+    font-size: 16px;
+    line-height: 1.87em;
+}
+.footer-user-nav ul{
+    padding-top: 20px;
+}
+/*FOOTER END*/
