@@ -162,6 +162,35 @@ header .bottom-header .header-nav a{
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
     margin-bottom: 60px;
 }
+.carousel-text span{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    line-height: 1.87;
+}
+.carousel-text p{
+    font-size: 16px;
+    line-height: 1.87;
+    color: #495662;
+}
+.carousel-prices{
+    margin-top: 65px;
+}
+.carousel-prices .price{
+    margin-right: 30px;
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
+.carousel-prices .order-link span{
+    margin-right: 10px;
+}
+.carousel-prices .order-link a{
+    text-decoration: none;
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
+.carousel-prices .order-link a:hover{
+    color: #ff5912;
+}
 /*DEFAULT COMPONENTS END*/
 
 /*ALL STYLES START*/
