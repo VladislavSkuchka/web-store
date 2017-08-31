@@ -16,7 +16,7 @@ ul, ol{
     padding: 0;
     list-style: none;
 }
-a{
+a, a:hover{
     color: inherit;
     text-decoration: none;
 }
@@ -31,6 +31,9 @@ textarea{
 }
 input{
     cursore: pointer;
+}
+label{
+    margin-bottom: 0;
 }
 /*RESET END*/
 
@@ -79,31 +82,62 @@ input{
     border-radius: 50%;
     margin: 0 5px;
 }
-.square{
+
+.bg-white{
+    background-color: #fff;
+}
+
+.red-bg{
+    background-color: #e12e3f;
+}
+.black-bg{
+    background-color: #34404b;
+}
+.blue-bg{
+    background-color: #3ab3ff;
+}
+.green-bg{
+    background-color: #2fd967;
+}
+.light-orange-bg{
+    background-color: #ff9060;
+}
+.orange-bg{
     background-color: #ff5912;
+}
+.more-info-items{
+    padding: 10px 60px;
+}
+.sales-block{
+    position: relative;
+}
+.sales-block > div{
+    display: inline-block;
+    width: 50px;
     height: 60px;
-    width: 60px;
+}
+.sales-block div:first-child{
     transform: rotate(-45deg);
 }
-.square span{
-    transform: translate(15%, 100%) rotate(45deg);
+.sales-block div:last-child{
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+}
+
+.sales-block span{
+    transform: translate(-20%, 100%) rotate(-45deg);
     display: block;
     color: #fff;
     text-align: center;
     font-family: 'Harmonia_italic';
 }
-.square p{
-    transform: translate(-10%, 70%) rotate(45deg);
+.sales-block p{
+    transform: translateY( 70%) rotate(-45deg);
     color: #fff;
     text-align: center;
     font-family: 'Harmonia_black';
     font-size: 18px;
-}
-.bg-white{
-    background-color: #fff;
-}
-.more-info-items{
-    padding: 30px 0;
 }
 .more-info-text span{
     text-transform: uppercase;
@@ -146,17 +180,11 @@ input{
     font-size: 36px;
     margin-bottom: 30px;
 }
-.item-title a{
-    text-decoration: none;
-}
+
 .item-title a:hover{
     color: #ff5912;
 }
-.item-price span{
-    font-family:'Harmonia_bold';
-    font-size: 18px;
-    color: #ff5912;
-}
+
 .title.big{
     font-size: 52px;
 }
@@ -173,9 +201,25 @@ input{
     background-color: #fff;
     padding: 30px 10px;
     transition: all .3s linear;
+    height: 372px;
+    position: relative;
 }
 .item:hover{
     box-shadow: 0 3px 7px  rgba(0, 0, 0, 0.35);
+}
+.item .item-img{
+    transition: all .3s linear;
+    margin-bottom: 30px;
+    height: 216px;
+}
+.item .item-img img{
+    max-height: 100%;
+}
+.item:hover .item-img{
+    height: 90px;
+}
+.item-description{
+    padding: 0 40px;
 }
 .item .item-title{
     white-space: nowrap;
@@ -183,7 +227,91 @@ input{
     text-overflow: ellipsis;
     font-family: 'Harmonia_bold';
     font-size: 18px;
-    padding: 30px 0;
+    padding-bottom: 30px;
+    color: #34404b;
+
+}
+.item:hover .item-title{
+    color: #ff5912;
+}
+.item .item-price{
+    font-family:'Harmonia_bold';
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 30px;
+}
+.item:hover .item-price{
+    display: none;
+}
+.more-info-on-hover{
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+    width: 100%;
+    padding: 0 50px;
+}
+.item:hover .more-info-on-hover{
+    opacity: 1;
+}
+.more-info-on-hover .size{
+    font-size: 14px;
+    color: #34404b;
+    margin-bottom: 30px;
+}
+.more-info-on-hover .colors{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f2f4f7;
+}
+
+.more-info-on-hover .colors li{
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+}
+.more-info-on-hover .item-controls{
+    padding-top: 30px;
+}
+.more-info-on-hover .item-controls li{
+    display: inline-block;
+}
+.more-info-on-hover .item-controls li + li{
+    margin-left: 30px;
+}
+.subscribe-fom{
+    padding: 37px 40px;
+}
+.subscribe-input-grope{
+    margin-right: 30px;
+}
+
+.subscribe-description span{
+    font-family:  'Harmonia_italic';
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.subscribe-description > span.orange-text{
+    text-transform: uppercase;
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.subscribe-input-grope label{
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.subscribe-input{
+    font-size: 14px;
+    color: #7c8791;
+    font-family: 'Harmonia_italic';
+    min-width: 255px;
 }
 
 header a:hover,
