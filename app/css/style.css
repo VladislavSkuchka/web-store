@@ -79,6 +79,9 @@ label{
 .orange-text{
     color: #ff5912;
 }
+.item-stars i.active{
+    color: #ff5912;
+}
 .icon-search-ic:hover{
     background-position: -81px -18px;
 }
@@ -217,6 +220,19 @@ label{
     padding-top: 17px;
     letter-spacing: .6em;
     color: rgba(52, 64, 75, .4);
+}
+.sale-item-title{
+    font-size: 18px;
+    font-family: 'Harmonia_bold';
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.sale-item-price{
+    font-family: 'Harmonia_bold';
+    font-size: 16px;
+}
+.item-stars i {
+    color: #e8ecf3;
 }
 /*DEFAULT CLASSES END*/
 
@@ -528,6 +544,9 @@ header .bottom-header .header-nav a{
 }
 .category-wrap .subscribe-fom{
     margin-top: 120px;
+}
+.best-sales .best-sale-items {
+    padding: 35px 30px;
 }
 /*ALL STYLES END*/
 /*FOOTER START*/
