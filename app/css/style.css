@@ -45,6 +45,20 @@ label{
     display: -ms-flexbox;
     display: flex;
 }
+.btn.btn-default{
+    background-color: #ff5912;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    color: #fff;
+}
+
+
+.btn .btn-default{
+    background-color: #ff5912;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    color: #fff;
+}
 .justify-sp-between{
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -64,6 +78,21 @@ label{
 }
 .orange-text{
     color: #ff5912;
+}
+.icon-search-ic:hover{
+    background-position: -81px -18px;
+}
+.icon-user-ic:hover{
+    background-position: -44px -38px;
+}
+.icon-cart-no-hover-ic:hover{
+    background-position: -20px -59px;
+}
+.icon-like-ic:hover{
+    background-position: -38px -80px;
+}
+.icon-share-ic:hover{
+    background-position: -44px -59px;
 }
 @media (max-width: 1999px) {
     .label{
