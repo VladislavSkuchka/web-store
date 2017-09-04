@@ -25,6 +25,12 @@ input, textarea, button{
     outline: none;
     border: none;
 }
+.range input, textarea{
+    width: 45px;
+    height: 25px;
+    background: #edf0f2;
+    margin-left: 15px;
+}
 
 textarea{
     resize: vertical;
@@ -41,12 +47,6 @@ label{
 .flex-container{
     display: flex;
 }
-.btn.btn-default{
-    background-color: #ff5912;
-    border-radius: 0;
-    color: #fff;
-}
-
 
 .btn .btn-default{
     background-color: #ff5912;
@@ -230,10 +230,42 @@ label{
     margin-top: 40px;
     margin-bottom: 10px;
 }
+.range-input-reoup{
+    margin-top: 37px;
+    margin-right: 8px;
+}
 .checkbox-group input[type="checkbox"]{
     display: none;
 }
+.choose-size span{
+    margin-right: 40px;
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #34404b;
+}
+.size-radio input[type="radio"]{
+    display: none;
 
+}
+.size-radio label{
+    font-size: 14px;
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+    text-transform: uppercase;
+    cursore: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+.order-form{
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
 .checkbox-group label{
     color: #34404b;
     font-size: 16px;
@@ -500,6 +532,18 @@ header .bottom-header .header-nav a{
     font-size: 18px;
     margin-bottom: 35px;
 }
+.range{
+    margin-top: 40px;
+}
+.min-value, .max-value{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    font-size:14px;
+    transform: translateX(-50%);
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+}
 .category-wrap .item{
     margin-bottom: 30px;
 
@@ -512,6 +556,13 @@ header .bottom-header .header-nav a{
 }
 .best-sales .best-sale-items {
     padding: 35px 30px;
+}
+.product-wrap{
+    padding: 100px 125px;
+    background-color: #fff;
+}
+.product-carousel{
+    width: 330px;
 }
 /*ALL STYLES END*/
 /*FOOTER START*/
