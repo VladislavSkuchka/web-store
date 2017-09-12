@@ -74,7 +74,23 @@ $( function() {
             // itemWidth: 330
         });
     });
-//    formstayler init
-    $('.custom-number').styler();
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+    //flexslide home
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+    // slick nsv init
+    $('.header-nav').slicknav({
+        appendTo:'header .bottom-header .flex-container.justify-sp-between',
+        label:''
+    });
+
 });
 

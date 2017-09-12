@@ -203,9 +203,8 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-nav li {
   margin: 0 6px;
-  display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .flex-control-paging li a {
   width: 11px;
@@ -231,6 +230,39 @@ html[xmlns] .flexslider .slides {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
+}
+.item-flexslider .flex-control-nav{
+  top: 50%;
+  bottom: auto;
+  width: auto;
+  transform: translateY(-50%);
+  left: 0;
+}
+.item-flexslider .flex-control-paging li{
+  display: block;
+  margin: 0;
+}
+.item-flexslider .flex-control-paging li + li{
+  margin-top: 10px;
+}
+.item-flexslider .flex-control-paging li a{
+  height: 16px;
+  width: 10px;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  transition: all .3s linear;
+  display: block;
+}
+.item-flexslider .flex-control-paging li a:hover{
+  background: #ff5912;
+}
+.item-flexslider .flex-control-paging li a.flex-active{
+  background: #ff5912;
+  height: 36px;
+}
+.item-flexslider .flex-direction-nav{
+  display: none;
 }
 .flex-control-thumbs {
   margin: 70px 0 0;
