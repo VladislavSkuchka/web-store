@@ -223,22 +223,7 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
-.item-flexslider .flex-control-nav{
-  top: 50%;
-  bottom: auto;
-  width: auto;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-}
-.item-flexslider .flex-control-paging li{
-  display: block;
-  margin: 0;
-}
-.item-flexslider .flex-control-paging li + li{
-  margin-top: 10px;
-}
+
 .item-flexslider .flex-control-paging li a{
   height: 16px;
   width: 10px;
@@ -255,10 +240,7 @@ html[xmlns] .flexslider .slides {
 .item-flexslider .flex-control-paging li a:hover{
   background: #ff5912;
 }
-.item-flexslider .flex-control-paging li a.flex-active{
-  background: #ff5912;
-  height: 36px;
-}
+
 .item-flexslider .flex-direction-nav{
   display: none;
 }

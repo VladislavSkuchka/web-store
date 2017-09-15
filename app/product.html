@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -29,6 +30,7 @@
 <body>
 <!--Header Start-->
 <header>
+    <!--TOP HEADER START-->
     <div class="top-header bg-white">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -45,9 +47,11 @@
             </div>
         </div>
     </div>
+    <!--TOP HEADER END-->
+    <!--BOTTOM HEADER START-->
     <div class="bottom-header bg-white">
         <div class="container">
-            <div class="flex-container justify-sp-between">
+            <div class=" flex-container justify-sp-between align-center flex-wrap">
                 <div class="logo">
                     <a href=""><img src="img/bottom-logo.png" alt=""></a>
                 </div>
@@ -58,8 +62,8 @@
                     <a href="">About</a>
                     <a href="">Contact</a>
                 </nav>
-                <ul class="user-controls flex-container align-center">
-                    <li class="flex-container align-center">
+                <ul class="user-controls flex-container">
+                    <li class="flex-container">
                         <a href="">
                             <span class="custom-icon icon-search-ic"></span>
                         </a>
@@ -79,6 +83,7 @@
             </div>
         </div>
     </div>
+    <!--BOTTOM HEADER START-->
 </header>
 <!--Header End-->
 <!--MAIN START-->
@@ -91,14 +96,14 @@
                     <div class="product-carousel center-block">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li data-thumb="../src/img/Product-main-1.png">
-                                    <img src="../src/img/Product-main-1.jpg" />
+                                <li data-thumb="img/Product-main-1.png">
+                                    <img src="img/Product-main-1.jpg">
                                 </li>
-                                <li data-thumb="../src/img/Product-main-1.jpg">
-                                    <img src="../src/img/Product-main-1.jpg" />
+                                <li data-thumb="img/Product-main-1.png">
+                                    <img src="img/Product-main-1.jpg">
                                 </li>
-                                <li data-thumb="../src/img/Product-main-1.jpg">
-                                    <img src="../src/img/Product-main-1.jpg" />
+                                <li data-thumb="img/Product-main-1.png">
+                                    <img src="img/Product-main-1.jpg">
                                 </li>
                             </ul>
                         </div>
@@ -339,7 +344,7 @@
 <footer>
     <div class="footer bg-white">
         <div class="container">
-            <div class="flex-container justify-sp-between">
+            <div class="flex-container justify-sp-between flex-column">
                 <div class="logo">
                     <a href="">
                         <img src="img/bottom-logo.png" alt="">
@@ -379,12 +384,13 @@
             </div>
         </div>
     </div>
-
+</footer>
     <!--FOOTER END-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/plugins.min.js"></script>

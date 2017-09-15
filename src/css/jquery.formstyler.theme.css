@@ -6,9 +6,9 @@
 }
 .jq-number__field {
 	width: 60px;
-	/*!*border: 1px solid #CCC;*!*/
-	/*!*border-bottom-color: #B3B3B3;*!*/
-	/*!*border-radius: 4px;*!*/
+	/*border: 1px solid #CCC;*/
+	/*border-bottom-color: #B3B3B3;*/
+	/*border-radius: 4px;*/
 	/*box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,.1);*/
 }
 /*.jq-number__field:hover {*/
@@ -73,12 +73,12 @@
 	/*!*border-bottom: none;*!*/
 	/*!*border-left: 5px solid transparent;*!*/
 /*}*/
-/*!*.jq-number__spin.minus:hover:after {*!*/
-/*!*border-top-color: #000;*!*/
-/*!*}*!*/
-/*!*.jq-number__spin.plus:hover:after {*!*/
-/*!*border-bottom-color: #000;*!*/
-/*!*}*!*/
+/*.jq-number__spin.minus:hover:after {*/
+/*border-top-color: #000;*/
+/*}*/
+/*.jq-number__spin.plus:hover:after {*/
+/*border-bottom-color: #000;*/
+/*}*/
 
 .jq-number__spin {
 	left: auto;
