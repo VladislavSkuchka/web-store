@@ -5,7 +5,7 @@
 	padding: 0 10px;
 }
 .jq-number__field {
-	width: 60px;
+	width: 65px;
 	/*border: 1px solid #CCC;*/
 	/*border-bottom-color: #B3B3B3;*/
 	/*border-radius: 4px;*/
@@ -15,21 +15,19 @@
 	/*border-color: #B3B3B3;*/
 /*}*/
 .jq-number__field input {
-	box-sizing: border-box;
 	width: 100%;
-	padding: 8px 9px;
 	border: none;
 	outline: none;
 	background: none;
-	font: 14px Arial, sans-serif;
-	color: #333;
+	font-size: 18px;
+	color: #ff5912;
 	text-align: center;
 }
 .jq-number__spin {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 20px;
+	width: 30px;
 	height: 14px;
 	/*border: 1px solid #CCC;*/
 	/*border-bottom-color: #B3B3B3;*/
@@ -66,13 +64,13 @@
 	/*border-bottom: 5px solid #999;*/
 	/*border-left: 5px solid transparent;*/
 }
-/*.jq-number__spin.minus:after {*/
-	/*!*top: 5px;*!*/
+.jq-number__spin.minus:after {
+	top: 5px;
 	/*!*border-top: 5px solid #999;*!*/
 	/*!*border-right: 5px solid transparent;*!*/
 	/*!*border-bottom: none;*!*/
 	/*!*border-left: 5px solid transparent;*!*/
-/*}*/
+}
 /*.jq-number__spin.minus:hover:after {*/
 /*border-top-color: #000;*/
 /*}*/
@@ -82,7 +80,7 @@
 
 .jq-number__spin {
 	left: auto;
-	height: 32px;
+	height: 25px;
 }
 .jq-number__spin.plus {
 	right: auto;
@@ -91,9 +89,9 @@
 .jq-number__spin:before {
 	content: '';
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	left: 10px;
-	width: 12px;
+	width: 10px;
 	height: 2px;
 	border: none;
 	background: #666;
@@ -102,13 +100,37 @@
 	display: none;
 }
 .jq-number__spin.plus:after {
-	top: 10px;
-	left: 15px;
+	top: 9px;
+	left: 14px;
 	width: 2px;
-	height: 12px;
+	height: 9px;
 	border: none;
 	background: #666;
 }
+.ui-widget-content{
+	background: #edf0f2;
+}
+.ui-slider-horizontal .ui-slider-range {
+	background: #34404b;
+
+}
+.ui-slider-horizontal .ui-slider-handle{
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	top: -0.5em;
+	background-color: #34404b;
+	border: none;
+}
+.disabled:active{
+	border: none;
+}
+.ui-widget.ui-widget-content{
+	border: none;
+	font-size: 5px;
+	margin-top: 55px;
+}
+
 /*.jq-number__spin:hover:before,*/
 /*.jq-number__spin.plus:hover:after {*/
 	/*!*background: #000;*!*/

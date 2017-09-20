@@ -39,8 +39,8 @@ $( function() {
     range.slider({
         range: true,
         min: 0,
-        max: 500,
-        values: [ 75, 300 ],
+        max: 1500,
+        values: [ 100, 1000 ],
         create: onCreateRange,
         slide: changeMinMaxVal,
         change: changeMinMaxVal
@@ -65,6 +65,10 @@ $( function() {
         range.slider( "option", "values", [ values[0] , this.value ] );
 
     })
+
+    //formstyler
+
+    $('.custom-number').styler();
 
     //  flex slider init
     $(window).load(function() {

@@ -290,8 +290,34 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     left: 10px;
   }
+  .flexslider:hover .flex-direction-nav .flex-prev{
+    left: 10px;
+  }
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;
   }
 }
+@media (max-width: 479px) {
+  .flexslider .slides img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .flexslider:hover .flex-direction-nav .flex-next{
+    right: 30px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 30px;
+  }
+  .flexslider{
+    margin: 0 8px 10px;
+  }
+  .flex-control-thumbs {
+    margin: 35px 0 0;
+  }
+  .flex-control-thumbs li{
+    width: 50px;
+  }
+}
+
